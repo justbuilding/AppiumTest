@@ -255,20 +255,19 @@ send_keys(Keys.F12)         键盘 F12
 显式等待
 显式等待使WebdDriver等待某个条件成立时继续执行，否则在达到最大时长时抛出超时异常（TimeoutException）
 """
-
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
-driver = webdriver.Firefox()
-driver.get("http://www.baidu.com")
-
-element = WebDriverWait(driver, 5, 0.5).until(
-                      EC.presence_of_element_located((By.ID, "kw"))
-                      )
-element.send_keys('selenium')
-driver.quit()
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
+#
+# driver = webdriver.Chrome()
+# driver.get("http://www.baidu.com")
+#
+# element = WebDriverWait(driver, 5, 0.5).until(
+#                       EC.presence_of_element_located((By.ID, "kw"))
+#                       )
+# element.send_keys('selenium')
+# driver.quit()
 """
 WebDriverWait类是由WebDirver 提供的等待方法。在设置时间内，默认每隔一段时间检测一次当前页面元素是否存在，如果超过设置时间检测不到则抛出异常。具体格式如下：
 
@@ -300,7 +299,7 @@ WebDriver提供了implicitly_wait()方法来实现隐式等待，默认设置为
 # from selenium.common.exceptions import NoSuchElementException
 # from time import ctime
 #
-# driver = webdriver.Firefox()
+# driver = webdriver.Chrome()
 #
 # # 设置隐式等待为10秒
 # driver.implicitly_wait(10)
@@ -314,11 +313,108 @@ WebDriver提供了implicitly_wait()方法来实现隐式等待，默认设置为
 # finally:
 #     print(ctime())
 #     driver.quit()
-# implicitly_wait()
+
 
 """
+implicitly_wait()
 默认参数的单位为秒，本例中设置等待时长为10秒。首先这10秒并非一个固定的等待时间，它并不影响脚本的执行速度。
 其次，它并不针对页面上的某一元素进行等待。当脚本执行到某个元素定位时，如果元素可以定位，则继续执行；
 如果元素定位不到，则它将以轮询的方式不断地判断元素是否被定位到。假设在第6秒定位到了元素则继续执行，
 若直到超出设置时长（10秒）还没有定位到元素，则抛出异常。
 """
+
+
+"""
+定位一组元素,定位一组元素的方法与定位单个元素的方法类似，唯一的区别是在单词element后面多了一个s表示复数
+find_elements_by_id()
+find_elements_by_name()
+find_elements_by_class_name()
+find_elements_by_tag_name()
+find_elements_by_link_text()
+find_elements_by_partial_link_text()
+find_elements_by_xpath()
+find_elements_by_css_selector()
+"""
+#
+# from selenium import webdriver
+# from time import sleep
+#
+# driver = webdriver.Chrome()
+# driver.get("https://www.baidu.com")
+#
+# driver.find_element_by_id("kw").send_keys("selenium")
+# driver.find_element_by_id("su").click()
+# sleep(1)
+#
+# # 定位一组元素
+# texts = driver.find_elements_by_xpath('//div/h3/a')
+#
+# # 循环遍历出每一条搜索结果的标题
+# for t in texts:
+#     print(t.text)
+#
+# driver.quit()
+
+
+"""
+在Web应用中经常会遇到frame/iframe表单嵌套页面的应用，WebDriver只能在一个页面上对元素识别与定位，
+对于frame/iframe表单内嵌页面上的元素无法直接定位。这时就需要通过switch_to.frame()方法将当前定位的主体切换为frame/iframe表单的内嵌页面中
+
+<html>
+  <body>
+    ...
+    <iframe id="x-URS-iframe" ...>
+      <html>
+         <body>
+           ...
+           <input name="email" >
+
+126邮箱登录框的结构大概是这样子的，想要操作登录框必须要先切换到iframe表单
+
+from selenium import webdriver
+driver = webdriver.Firefox()
+driver.switch_to.frame(0)  # 1.用frame的index来定位，定位第一个frame （index 下标从0开始）
+"""
+"""
+# xpath 绝对路径 定位难，不要用
+# driver.find_element_by_xpath('/div[1]/div[1]/div[1]/form/div/div[0]/div[1]/input').clear()
+
+
+# xpath 相对路径 定位好
+<html>
+<div>
+<input class='btn',name="button1">
+</div>
+<div>
+    <span>
+         <input   class='btn',name="button2">
+    </span>
+</div>
+</html>
+
+# driver = webdriver.Firefox()
+# driver.get("http://www.chesudi.com")
+# element = driver.find_element_by_xpath(.//input[@class="btn"])
+# """
+# from selenium import webdriver
+# from time import sleep
+#
+#
+# driver = webdriver.Chrome()
+# driver.get("http://www.126.com")
+# sleep(3)
+# driver.find_element_by_id("switchAccountLogin").click() # 找到密码登录按钮按下
+# sleep(3)
+# # i=driver.find_element_by_id("x-URS-iframe") 由于定位的id是随机，故不可用，直接定位frame(0)即第一个frame
+# driver.switch_to.frame(0)
+# sleep(3)
+# driver.find_element_by_name("email").clear()
+# driver.find_element_by_name("email").send_keys("username")
+# driver.find_element_by_name("password").clear()
+# driver.find_element_by_name("password").send_keys("password")
+# driver.find_element_by_id("dologin").click()
+# driver.switch_to.default_content() # 在进入多级表单的情况下，可以通过switch_to.default_content()跳回最外层的页面
+# sleep(3)
+# driver.quit()
+
+
