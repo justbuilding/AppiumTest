@@ -389,13 +389,14 @@ driver.switch_to.frame(0)  # 1.用frame的index来定位，定位第一个frame 
     <span>
          <input   class='btn',name="button2">
     </span>
+    
 </div>
 </html>
 
 # driver = webdriver.Firefox()
 # driver.get("http://www.chesudi.com")
 # element = driver.find_element_by_xpath(.//input[@class="btn"])
-# """
+"""
 # from selenium import webdriver
 # from time import sleep
 #
@@ -418,3 +419,151 @@ driver.switch_to.frame(0)  # 1.用frame的index来定位，定位第一个frame 
 # driver.quit()
 
 
+# from selenium import webdriver
+# import time
+#
+#
+# driver = webdriver.Chrome()
+# driver.implicitly_wait(10)
+# driver.get("http://www.baidu.com")
+#
+# # current_window_handle：获得当前窗口句柄。
+# # window_handles：返回所有窗口的句柄到当前会话。
+# # switch_to.window()：用于切换到相应的窗口，与上一节的switch_to.frame()类似，前者用于不同窗口的切换，后者用于不同表单之间的切换。
+# # 获得百度搜索窗口句柄
+# research_windows = driver.current_window_handle
+#
+# driver.find_element_by_link_text('登录').click()
+# driver.find_element_by_link_text("立即注册").click()
+#
+# # 获得当前所有打开的窗口的句柄
+# all_handles = driver.window_handles
+#
+# # 进入注册窗口
+# for handle in all_handles:
+#     if handle != research_windows:
+#         driver.switch_to.window(handle)
+#         print('now register window!')
+#         driver.find_element_by_name("userName").send_keys('username11110')
+#         time.sleep(6)
+#         print('Type username ok')
+#         driver.find_element_by_id('TANGRAM__PSP_4__password').send_keys('password11110')
+#         print('Type password ok')
+#         time.sleep(2)
+
+
+"""
+警告框处理
+在WebDriver中处理JavaScript所生成的alert、confirm以及prompt十分简单，具体做法是使用 switch_to.alert 方法定位
+alert/confirm/prompt，然后使用text/accept/dismiss/ send_keys等方法进行操作。
+
+text：返回 alert/confirm/prompt 中的文字信息。
+
+accept()：接受现有警告框。
+
+dismiss()：解散现有警告框。
+
+send_keys(keysToSend)：发送文本至警告框。keysToSend：将文本发送至警告框。
+
+如下图，百度搜索设置弹出的窗口是不能通过前端工具对其进行定位的，这个时候就可以通过switch_to_alert()方法接受这个弹窗。 
+
+"""
+# from selenium import webdriver
+# from selenium.webdriver.common.action_chains import ActionChains
+# import time
+#
+# driver = webdriver.Chrome()
+# driver.implicitly_wait(10)
+# driver.get('http://www.baidu.com')
+#
+# # 鼠标悬停至“设置”链接
+# link = driver.find_element_by_link_text('设置')
+# ActionChains(driver).move_to_element(link).perform()
+#
+# # 打开搜索设置
+# driver.find_element_by_link_text("搜索设置").click()
+# time.sleep(2)  # Firefox上正常运行的脚本在chrome上提示Element is not clickable at point
+#                # 分析原因，
+#                # 首先肯定不是因为页面元素不存在而无法点击。也不是要点击的button不在预览范围内。
+#                # 后来发现，是被前一步的操作的一个弹出层挡住了。因为前几步是弹出了一个modal，
+#                # 在关闭modal的时候webdriver就立刻执行下一步点击某个link，而这时modal可能还没完全关闭掉。
+#                # 解决办法是等待那个弹出层完全关闭掉，link可以点击的时候再执行
+#                #在两步之间加了个简单的time.sleep(2)命令解决了
+# # 保存设置
+# driver.find_element_by_link_text('保存设置').click()
+# time.sleep(2)
+#
+# # 接受警告框
+# driver.switch_to.alert.accept()
+#
+# driver.quit()
+
+
+"""
+下拉框选择
+WebDriver提供了Select类来处理下拉框
+"""
+# from selenium import webdriver
+# from selenium.webdriver.support.select import Select
+# from time import sleep
+#
+#
+# driver = webdriver.Chrome()
+# driver.implicitly_wait(10)
+# driver.get('http://www.baidu.com')
+#
+# # 鼠标悬停至“设置”链接
+# driver.find_element_by_link_text('设置').click()
+# sleep(1)
+# # 打开搜索设置
+# driver.find_element_by_link_text("搜索设置").click()
+# sleep(2)
+#
+# # 搜索结果显示条数
+# sel = driver.find_element_by_xpath("//select[@id='nr']")
+# Select(sel).select_by_value('50')  # Select类用于定位select标签select_by_value() 方法用于定位下拉选项中的value值50
+# sleep(3)
+# driver.quit()
+
+
+"""
+不小心点到pycharm的光标模式，按insert键，笔记本没insert键可以用输入法的模拟键盘
+"""
+
+
+"""
+文件上传
+对于通过input标签实现的上传功能，可以将其看作是一个输入框，即通过send_keys()指定本地文件路径的方式实现文件上传。
+创建upfile.html文件
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>upload_file</title>
+<link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="row-fluid">
+    <div class="span6 well">
+    <h3>upload_file</h3>
+      <input type="file" name="file" />
+    </div>
+  </div>
+</body>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.js"></scrip>
+</html>
+
+通过浏览器打开upfile.html文件，功能如下图。
+接下来通过send_keys()方法来实现文件上传。
+"""
+from selenium import webdriver
+import os
+
+
+driver = webdriver.Chrome()
+file_path = 'file:///' + os.path.abspath('upfile.html')
+driver.get(file_path)
+
+# 定位上传按钮，添加本地文件
+driver.find_element_by_name("file").send_keys('D:\\upload_file.txt')
+
+driver.quit()
