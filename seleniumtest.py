@@ -555,15 +555,132 @@ WebDriver提供了Select类来处理下拉框
 通过浏览器打开update.html文件，功能如下图。
 接下来通过send_keys()方法来实现文件上传。
 """
-from selenium import webdriver
-import os
+# from selenium import webdriver
+# import os
+# from time import sleep
+#
+#
+# driver = webdriver.Chrome()
+# file_path = 'file:///' + os.path.abspath('upload_file.html')
+# driver.get(file_path)
+#
+# # 定位上传按钮，添加本地文件
+# driver.find_element_by_name("file").send_keys('D:\\upload_file.txt')
+# sleep(3)
+# driver.quit()
 
 
-driver = webdriver.Chrome()
-file_path = 'file:///' + os.path.abspath('upload_file.html')
-driver.get(file_path)
+"""
+cookie操作
+有时候我们需要验证浏览器中cookie是否正确，因为基于真实cookie的测试是无法通过白盒和集成测试进行的。
+WebDriver提供了操作Cookie的相关方法，可以读取、添加和删除cookie信息。
+WebDriver操作cookie的方法：
+get_cookies()： 获得所有cookie信息。
+get_cookie(name)： 返回字典的key为“name”的cookie信息。
+add_cookie(cookie_dict) ： 添加cookie。“cookie_dict”指字典对象，必须有name 和value 值。
+delete_cookie(name,optionsString)：删除cookie信息。“name”是要删除的cookie的名称，
+“optionsString”是该cookie的选项，目前支持的选项包括“路径”，“域”。
+delete_all_cookies()： 删除所有cookie信息。
+"""
+# 下面通过get_cookies()来获取当前浏览器的cookie信息
+# from selenium import webdriver
+# from time import sleep
+#
+#
+# driver = webdriver.Chrome()
+# driver.get("http://www.youdao.com")
+#
+# # 获得cookie信息
+# cookie= driver.get_cookies()
+# # 将获得cookie的信息打印
+# print(cookie)
+# sleep(3)
+# driver.quit()
+"""
+执行结果
+[{'domain': 'youdao.com', 'expiry': 1622942381, 'httpOnly': False, 'name': 'OUTFOX_SEARCH_USER_ID_NCOO', 'path': '/', 'secure': False, 'value': '346462179.49767685'}, 
+{'domain': 'www.youdao.com', 'httpOnly': False, 'name': '___rl__test__cookies', 'path': '/', 'secure': False, 'value': '1559870381383'}, 
+{'domain': 'youdao.com', 'httpOnly': False, 'name': 'JSESSIONID', 'path': '/', 'secure': False, 'value': 'abctZ3BGCa2Gz4ClrHVSw'}, 
+{'domain': 'youdao.com', 'expiry': 2505950380.908598, 'httpOnly': False, 'name': 'OUTFOX_SEARCH_USER_ID', 'path': '/', 'secure': False, 'value': '-1142189720@58.253.195.52'}, 
+{'domain': 'youdao.com', 'httpOnly': False, 'name': 'DICT_UGC', 'path': '/', 'secure': False, 'value': 'be3af0da19b5c5e6aa4e17bd8d90b28a|'}]
+"""
+# 从执行结果可以看出，cookie数据是以字典的形式进行存放的。知道了cookie的存放形式
+# 接下来我们就可以按照这种形式向浏览器中写入cookie信息。
+# from selenium import webdriver
+#
+#
+# driver = webdriver.Chrome()
+# driver.get("http://www.youdao.com")
+#
+# # 向cookie的name 和value中添加会话信息
+# driver.add_cookie({'name': 'key-aaaaaaa', 'value': 'value-bbbbbb'})
+#
+# # 遍历cookies中的name 和value信息并打印，当然还有上面添加的信息
+# for cookie in driver.get_cookies():
+#     print("%s -> %s" % (cookie['name'], cookie['value']))
+#
+# driver.quit()
 
-# 定位上传按钮，添加本地文件
-driver.find_element_by_name("file").send_keys('D:\\upload_file.txt')
 
-driver.quit()
+"""
+调用JavaScript代码
+WebDriver提供了操作浏览器的前进和后退方法，但对于浏览器滚动条并没有提供相应的操作方法。
+在这种情况下，就可以借助JavaScript来控制浏览器的滚动条。WebDriver提供了execute_script()方法来执行JavaScript代码
+用于调整浏览器滚动条位置的JavaScript代码如下：
+<!-- window.scrollTo(左边距,上边距); -->
+window.scrollTo(0,450);
+window.scrollTo()方法用于设置浏览器窗口滚动条的水平和垂直位置。方法的第一个参数表示水平的左间距，第二个参数表示垂直的上边距。
+"""
+# from selenium import webdriver
+# from time import sleep
+#
+# # 访问百度
+# driver=webdriver.Chrome()
+# driver.get("http://www.baidu.com")
+#
+# # 搜索
+# driver.find_element_by_id("kw").send_keys("selenium")
+# driver.find_element_by_id("su").click()
+# sleep(2)
+#
+# # 设置浏览器窗口大小
+# driver.set_window_size(500, 500)
+# sleep(3)
+# # 通过javascript设置浏览器窗口的滚动条位置
+# js="window.scrollTo(100,450);"
+# driver.execute_script(js)
+# sleep(3)
+# driver.quit()
+
+# 通过浏览器打开百度进行搜索，并且提前通过set_window_size()方法将浏览器窗口设置为固定宽高显示，
+# 目的是让窗口出现水平和垂直滚动条。然后通过execute_script()方法执行JavaScripts代码来移动滚动条的位置
+
+
+"""
+窗口截图
+自动化用例是由程序去执行的，因此有时候打印的错误信息并不十分明确。如果在脚本执行出错的时候能对当前窗口截图保存，
+那么通过图片就可以非常直观地看出出错的原因。WebDriver提供了截图函数get_screenshot_as_file()来截取当前窗口
+"""
+# from selenium import webdriver
+# from time import sleep
+#
+# driver = webdriver.Chrome()
+# driver.get('http://www.baidu.com')
+#
+# driver.find_element_by_id('kw').send_keys('selenium')
+# driver.find_element_by_id('su').click()
+# sleep(2)
+#
+# # 截取当前窗口，并指定截图图片的保存位置,脚本运行完成后打开D盘，就可以找到baidu.jpg图片文件了(也可保存为png格式)
+# driver.get_screenshot_as_file("D:\\baidu.jpg")
+# # driver.get_screenshot_as_png("D:\\baidu.png")
+
+
+"""
+关闭浏览器
+在前面的例子中我们一直使用quit()方法，其含义为退出相关的驱动程序和关闭所有窗口。除此之外，WebDriver还提供了close()方法，用来关闭当前窗口。
+例多窗口的处理，在用例执行的过程中打开了多个窗口，我们想要关闭其中的某个窗口，这时就要用到close()方法进行关闭了。
+close() 关闭单个窗口
+quit() 关闭所有窗口
+"""
+
