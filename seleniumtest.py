@@ -552,7 +552,7 @@ WebDriver提供了Select类来处理下拉框
 <script src="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.js"></scrip>
 </html>
 
-通过浏览器打开upfile.html文件，功能如下图。
+通过浏览器打开update.html文件，功能如下图。
 接下来通过send_keys()方法来实现文件上传。
 """
 from selenium import webdriver
@@ -560,7 +560,7 @@ import os
 
 
 driver = webdriver.Chrome()
-file_path = 'file:///' + os.path.abspath('upfile.html')
+file_path = 'file:///' + os.path.abspath('upload_file.html')
 driver.get(file_path)
 
 # 定位上传按钮，添加本地文件
