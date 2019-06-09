@@ -1,0 +1,2296 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="1.Appium简介.files/filelist.xml">
+<link rel=Edit-Time-Data href="1.Appium简介.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>pingmian</o:Author>
+  <o:LastAuthor>Administrator</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>10</o:TotalTime>
+  <o:Created>2019-06-09T16:04:00Z</o:Created>
+  <o:LastSaved>2019-06-09T16:04:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>704</o:Words>
+  <o:Characters>4014</o:Characters>
+  <o:Lines>33</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4709</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:KSOProductBuildVer dt:dt="string">2052-10.1.0.7224</o:KSOProductBuildVer>
+ </o:CustomDocumentProperties>
+</xml><![endif]-->
+<link rel=dataStoreItem href="1.Appium简介.files/item0001.xml"
+target="1.Appium简介.files/props002.xml">
+<link rel=themeData href="1.Appium简介.files/themedata.thmx">
+<link rel=colorSchemeMapping href="1.Appium简介.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DrawingGridHorizontalSpacing>5.25 磅</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:UseWord2010TableStyleRules/>
+   <w:DontGrowAutofit/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:DoNotOptimizeForBrowser/>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="375">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Outline List 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Outline List 2"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Hashtag"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Unresolved Mention"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536869121 64767 1 0 415 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+h2
+	{mso-style-noshow:yes;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 2 字符";
+	mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h3
+	{mso-style-noshow:yes;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 3 字符";
+	mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h4
+	{mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:155%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h5
+	{mso-style-noshow:yes;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 5 字符";
+	mso-style-next:正文;
+	margin-top:14.0pt;
+	margin-right:0cm;
+	margin-bottom:14.5pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:156%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-alt:none windowtext 0cm;
+	padding:0cm;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+code
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;
+	mso-bidi-font-family:宋体;}
+pre
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"HTML 预设格式 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	mso-style-link:"批注框文本 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"批注框文本 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:批注框文本;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 2";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 3";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 5";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.HTML
+	{mso-style-name:"HTML 预设格式 字符";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML 预设格式";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-hansi-font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.hljs-attr
+	{mso-style-name:hljs-attr;
+	mso-style-unhide:no;}
+span.hljs-string
+	{mso-style-name:hljs-string;
+	mso-style-unhide:no;}
+span.hljs-literal
+	{mso-style-name:hljs-literal;
+	mso-style-unhide:no;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;
+	mso-style-unhide:no;}
+span.hljs-meta
+	{mso-style-name:hljs-meta;
+	mso-style-unhide:no;}
+span.bash
+	{mso-style-name:bash;
+	mso-style-unhide:no;}
+span.hljs-keyword
+	{mso-style-name:hljs-keyword;
+	mso-style-unhide:no;}
+span.hljs-builtin
+	{mso-style-name:hljs-built_in;
+	mso-style-unhide:no;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("1.Appium简介.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("1.Appium简介.files/header.htm") fcs;
+	mso-endnote-separator:url("1.Appium简介.files/header.htm") es;
+	mso-endnote-continuation-separator:url("1.Appium简介.files/header.htm") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:36.0pt 36.0pt 36.0pt 36.0pt;
+	mso-header-margin:21.3pt;
+	mso-footer-margin:41.6pt;
+	mso-header:url("1.Appium简介.files/header.htm") h1;
+	mso-footer:url("1.Appium简介.files/header.htm") f1;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:178932902;
+	mso-list-template-ids:-2093599476;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:338193510;
+	mso-list-template-ids:-1443884652;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:501161526;
+	mso-list-template-ids:1331957210;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1158350332;
+	mso-list-template-ids:1717333216;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4
+	{mso-list-id:1282810108;
+	mso-list-template-ids:1020143230;}
+@list l5
+	{mso-list-id:1793748819;
+	mso-list-template-ids:427951794;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2049"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink="#954F72" style='tab-interval:21.0pt;
+text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-bottom:12.0pt;background:white;border:none;mso-border-bottom-alt:
+solid #EAECEF .75pt;padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span
+lang=EN-US style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>Appium</span><span style='font-size:21.0pt;line-height:173%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>简介</span><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+mso-bidi-font-family:宋体;color:#24292E;mso-font-kerning:0pt'><o:p></o:p></span></h2>
+
+</div>
+
+<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span lang=EN-US
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#6A737D'>Appium is
+an open source test automation framework for use with native, hybrid and mobile
+web apps. It drives iOS, Android, and Windows apps using the WebDriver
+protocol.<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>Appium</span><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'>是一个开源测试自动化框架，可用于原生，混合和移动<span
+lang=EN-US>Web</span>应用程序测试。 它使用<span lang=EN-US>WebDriver</span>协议驱动<span
+lang=EN-US>iOS</span>，<span lang=EN-US>Android</span>和<span lang=EN-US>Windows</span>应用程序。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='color:#24292E;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l3 level1 lfo2;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='color:
+     windowtext'><a href="http://appium.io/"><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>Appium</span><span
+     lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+     color:#0366D6'><span lang=EN-US>官网</span></span></a></span><span
+     lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l3 level1 lfo2;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='color:
+     windowtext'><a
+     href="https://github.com/appium?utf8=%E2%9C%93&amp;q=&amp;type=source&amp;language="><span
+     style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>Appium
+     github</span><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:
+     "微软雅黑",sans-serif;color:#0366D6'><span lang=EN-US>主页</span></span></a></span><span
+     lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l3 level1 lfo2;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='color:
+     windowtext'><a href="http://appium.io/docs/cn/about-appium/intro/"><span
+     lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+     color:#0366D6'><span lang=EN-US>官方中文文档</span></span></a></span><span
+     lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l3 level1 lfo2;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='color:
+     windowtext'><a href="http://discuss.appium.io/latest"><span
+     style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>Appium</span><span
+     lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+     color:#0366D6'><span lang=EN-US>官方论坛</span></span></a></span><span
+     lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l3 level1 lfo2;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='color:
+     windowtext'><a href="https://testerhome.com"><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>Testerhome</span><span
+     lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+     color:#0366D6'><span lang=EN-US>中文社区</span></span></a></span><span
+     lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif'><o:p></o:p></span></li>
+</ul>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>Appium</span><span style='font-size:21.0pt;line-height:173%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>优势<span lang=EN-US><o:p></o:p></span></span></h2>
+
+</div>
+
+<ul type=disc>
+ <li class=MsoNormal style='color:#24292E;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l1 level1 lfo3;
+     tab-stops:list 36.0pt;background:white'><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>可以跨平台同时支持<span lang=EN-US>android</span>、<span
+     lang=EN-US>ios<o:p></o:p></span></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l1 level1 lfo3;
+     tab-stops:list 36.0pt;background:white'><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>支持多种语言，<span lang=EN-US>java</span>、<span
+     lang=EN-US>python</span>、<span lang=EN-US>php</span>、<span lang=EN-US>Ruby</span>等等<span
+     lang=EN-US><o:p></o:p></span></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l1 level1 lfo3;
+     tab-stops:list 36.0pt;background:white'><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>不用为复杂的环境发愁<span lang=EN-US><o:p></o:p></span></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l1 level1 lfo3;
+     tab-stops:list 36.0pt;background:white'><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>如果你有<span lang=EN-US>selenium</span>经验，直接上手。<span
+     lang=EN-US><o:p></o:p></span></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l1 level1 lfo3;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'><o:p>&nbsp;</o:p></span></li>
+</ul>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>Appium</span><span style='font-size:21.0pt;line-height:173%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>自动化操作演示<span lang=EN-US><o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>纸上谈兵终觉浅绝知此事要躬行，详见视频教程演示<span lang=EN-US><o:p></o:p></span></span></p>
+
+<h5 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:12.0pt;line-height:156%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>演示场景<span lang=EN-US><o:p></o:p></span></span></h5>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='color:#24292E;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo4;
+     tab-stops:list 36.0pt;background:white'><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>自动安装考研帮<span lang=EN-US>App(kaoyan3.1.0.apk)</span>，然后启动<span
+     lang=EN-US>App<o:p></o:p></span></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo4;
+     tab-stops:list 36.0pt;background:white'><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>检测是否有升级弹窗，如果有则点击取消按钮，<span
+     lang=EN-US><o:p></o:p></span></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo4;
+     tab-stops:list 36.0pt;background:white'><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>然后检测是否有引导页面，如果有则自动点击跳过按钮<span
+     lang=EN-US><o:p></o:p></span></span></li>
+</ol>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>Appium</span><span style='font-size:21.0pt;line-height:173%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>架构原理<span lang=EN-US><o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>Appium</span><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'>是在手机操作系统自带的测试框架基础上实现的，<span
+lang=EN-US>Android</span>和<span lang=EN-US>iOS</span>的系统上使用的工具分别如下：<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='color:#24292E;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l2 level1 lfo5;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>Android</span><span
+     style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif'>（版本<span
+     lang=EN-US>&gt;4.3</span>）：<span lang=EN-US>UIAutomator</span>，<span
+     lang=EN-US>Android 4.3</span>之后系统自带的<span lang=EN-US>UI</span>自动化测试工具。<span
+     lang=EN-US><o:p></o:p></span></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l2 level1 lfo5;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>Android</span><span
+     style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif'>（版本≤<span
+     lang=EN-US>4.3</span>）：<span lang=EN-US>Selendroid</span>，基于<span
+     lang=EN-US>Android Instrumentation</span>框架实现的自动化测试工具。<span lang=EN-US><o:p></o:p></span></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l2 level1 lfo5;
+     tab-stops:list 36.0pt;background:white'><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>·<span lang=EN-US>iOS</span>：<span
+     lang=EN-US>UIAutomation</span>（<span lang=EN-US>instruments</span>框架里面的一个模板），<span
+     lang=EN-US>iOS</span>系统自带的<span lang=EN-US>UI</span>自动化测试工具。<span
+     lang=EN-US><o:p></o:p></span></span></li>
+</ul>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="图片_x0020_11" o:spid="_x0000_i1034" type="#_x0000_t75"
+ alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/mobile-test-automation-using-appium-ios-android.jpg"
+ style='width:375pt;height:412.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="1.Appium简介.files/image001.jpg" o:title="mobile-test-automation-using-appium-ios-android"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=500 height=550
+src="1.Appium简介.files/image002.jpg"
+alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/mobile-test-automation-using-appium-ios-android.jpg"
+v:shapes="图片_x0020_11"><![endif]></span><span lang=EN-US style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<h5 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:12.0pt;line-height:156%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>运行原理<span lang=EN-US><o:p></o:p></span></span></h5>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>我们的电脑（<span lang=EN-US>client</span>）上运行自动化测试脚本，调用的是<span
+lang=EN-US>webdriver</span>的接口，<span lang=EN-US>appium server</span>接收到我们<span
+lang=EN-US>client</span>上发送过来的命令后他会将这些命令转换为<span lang=EN-US>UIautomator</span>认识的命令，然后由<span
+lang=EN-US>UIautomator</span>来在设备上执行自动化。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>Appium</span><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'>的架构原理如上图所示，由客户端（<span lang=EN-US>Appium
+Client</span>）和服务器（<span lang=EN-US>Appium Server</span>）两部分组成，客户端与服务器端通过<span
+lang=EN-US>JSON Wire Protocol</span>进行通信。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<h5 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:12.0pt;line-height:
+156%;font-family:"微软雅黑",sans-serif;color:#24292E'>Appium</span><span
+style='font-size:12.0pt;line-height:156%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>服务器<span lang=EN-US><o:p></o:p></span></span></h5>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>Appium</span><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'>服务器是<span lang=EN-US>Appium</span>框架的核心。它是一个基于<span
+lang=EN-US>Node.js</span>实现的<span lang=EN-US>HTTP</span>服务器。<span lang=EN-US>Appium</span>服务器的主要功能是接受从<span
+lang=EN-US>Appium</span>客户端发起的连接，监听从客户端发送来的命令，将命令发送给<span lang=EN-US>bootstrap.jar</span>（<span
+lang=EN-US>iOS</span>手机为<span lang=EN-US>bootstrap.js</span>）执行，并将命令的执行结果通过<span
+lang=EN-US>HTTP</span>应答反馈给<span lang=EN-US>Appium</span>客户端。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<h5 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:12.0pt;line-height:
+156%;font-family:"微软雅黑",sans-serif;color:#24292E'>Bootstrap.jar</span><span
+style='font-size:12.0pt;line-height:156%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>。<span lang=EN-US><o:p></o:p></span></span></h5>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>Bootstrap.jar</span><span style='font-size:
+10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>是在<span lang=EN-US>Android</span>手机上运行的一个应用程序，它在手机上扮演<span
+lang=EN-US>TCP</span>服务器的角色。当<span lang=EN-US>Appium</span>服务器需要运行命令时，<span
+lang=EN-US>Appium</span>服务器会与<span lang=EN-US>Bootstrap.jar</span>建立<span
+lang=EN-US>TCP</span>通信，并把命令发送给<span lang=EN-US>Bootstrap.jar</span>；<span
+lang=EN-US>Bootstrap.jar</span>负责运行测试命令。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<h5 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:12.0pt;line-height:
+156%;font-family:"微软雅黑",sans-serif;color:#24292E'>Appium</span><span
+style='font-size:12.0pt;line-height:156%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>客户端。<span lang=EN-US><o:p></o:p></span></span></h5>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>它主要是指实现了<span lang=EN-US>Appium</span>功能的<span lang=EN-US>WebDriver</span>协议的客户端<span
+lang=EN-US>Library</span>，它负责与<span lang=EN-US>Appium</span>服务器建立连接，并将测试脚本的指令发送到<span
+lang=EN-US>Appium</span>服务器。现有的客户端<span lang=EN-US>Library</span>有多种语言的实现，包括<span
+lang=EN-US>Ruby</span>、<span lang=EN-US>Python</span>、<span lang=EN-US>Java</span>、<span
+lang=EN-US>JavaScript</span>（<span lang=EN-US>Node.js</span>）、<span lang=EN-US>Object
+C</span>、<span lang=EN-US>PHP</span>和<span lang=EN-US>C#</span>。<span
+lang=EN-US>Appium</span>的测试是在这些<span lang=EN-US>Library</span>的基础上进行开发的。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>Appium</span><span style='font-size:21.0pt;line-height:173%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>组件<span lang=EN-US><o:p></o:p></span></span></h2>
+
+</div>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:15.0pt;line-height:
+155%;font-family:"微软雅黑",sans-serif;color:#24292E'>Appium Server<o:p></o:p></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>Appium Server</span><span style='font-size:
+10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>就是<span lang=EN-US>Appium</span>的服务端——一个<span
+lang=EN-US>web</span>接口服务，使用<span lang=EN-US>Node.js</span>实现。引用官网解释说明。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span lang=EN-US
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#6A737D'>Appium is
+a server written in Node.js. It can be built and installed from source or
+installed directly from NPM:<o:p></o:p></span></p>
+
+<pre style='background:#F6F8FA'><span class=hljs-meta><b><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#999999;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>$</span></b></span><span
+class=bash><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'> npm install -g appium</span></span><code><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-meta><b><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#999999;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>$</span></b></span><span
+class=bash><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'> appium</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:15.0pt;line-height:
+155%;font-family:"微软雅黑",sans-serif;color:#24292E'>Appium Desktop<o:p></o:p></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>Appium Desktop</span><span style='font-size:
+10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>是一款适用于<span lang=EN-US>Mac</span>，<span
+lang=EN-US>Windows</span>和<span lang=EN-US>Linux</span>的开源应用程序，它以美观而灵活的用户界面为您提供<span
+lang=EN-US>Appium</span>自动化服务器的强大功能。 它是几个<span lang=EN-US>Appium</span>相关工具的组合：<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+36.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo6;tab-stops:list 36.0pt;
+background:white'><![if !supportLists]><span lang=EN-US style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;mso-bidi-font-family:微软雅黑;color:#24292E'><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'>Appium Server</span><span
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>的图形界面。 您可以设置选项，启动<span
+lang=EN-US>/</span>停止服务器，查看日志等<span lang=EN-US>...</span>您也不需要使用<span
+lang=EN-US>Node </span>的<span lang=EN-US>NPM</span>来安装<span lang=EN-US>Appium</span>，因为<span
+lang=EN-US>Node</span>运行时与<span lang=EN-US>Appium Desktop</span>捆绑在一起。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+36.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo6;tab-stops:list 36.0pt;
+background:white'><![if !supportLists]><span lang=EN-US style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;mso-bidi-font-family:微软雅黑;color:#24292E'><span
+style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>您可以使用<span lang=EN-US>Inspector</span>查看应用程序的元素，获取有关它们的基本信息，并与它们进行基本的交互。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="图片_x0020_10" o:spid="_x0000_i1033" type="#_x0000_t75" alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/appium-desktop.PNG"
+ style='width:459.6pt;height:426.6pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="1.Appium简介.files/image003.png" o:title="appium-desktop"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=613 height=569
+src="1.Appium简介.files/image004.gif"
+alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/appium-desktop.PNG"
+v:shapes="图片_x0020_10"><![endif]></span><span lang=EN-US style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="图片_x0020_9" o:spid="_x0000_i1032" type="#_x0000_t75" alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/appium-desktop%20start.PNG"
+ style='width:431.4pt;height:338.4pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="1.Appium简介.files/image005.png" o:title="appium-desktop%20start"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=575 height=451
+src="1.Appium简介.files/image006.gif"
+alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/appium-desktop%20start.PNG"
+v:shapes="图片_x0020_9"><![endif]></span><span lang=EN-US style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<h5 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:12.0pt;line-height:156%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>注意<span lang=EN-US><o:p></o:p></span></span></h5>
+
+<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span lang=EN-US
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#6A737D'>Appium
+Desktop</span><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#6A737D'>与<span lang=EN-US>Appium</span>不同。<span lang=EN-US> Appium
+Desktop</span>是<span lang=EN-US>Appium</span>的图形前端，带有其他工具。<span lang=EN-US>
+Appium Desktop</span>以其自己的节奏发布，并拥有自己的版本控制系统。 就像国内很多定制的<span lang=EN-US>Android</span>系统有自己版本号，但是都是基于一个<span
+lang=EN-US>Android</span>系统版本封装的。版本号不一定与<span lang=EN-US>Andriod</span>原生系统版本号一致。如：魅族的<span
+lang=EN-US>flyme6.0</span>系统的内核是<span lang=EN-US>Android 5.1<o:p></o:p></span></span></p>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:15.0pt;line-height:
+155%;font-family:"微软雅黑",sans-serif;color:#24292E'>Appium GUI<o:p></o:p></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>Appium GUI</span><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'>是<span lang=EN-US>Appium desktop</span>的前身。
+这个也是把<span lang=EN-US>Appium server</span>封装成了一个图形界面，降低使用门槛，如同最初的操作系统<span
+lang=EN-US>Dos</span>都是敲命令，后面都是图形界面操作系统，如<span lang=EN-US>Windows</span>系统。很多初学者对下面这个界面应该不陌生吧，这个就是<span
+lang=EN-US>Windows</span>版本的<span lang=EN-US>Appium GUI</span>界面。测试人员可以手动启动，配置相关<span
+lang=EN-US>server </span>服务，如果不用这个启动的话，需要命令启动服务。因为大部分教程都是基于这个<span lang=EN-US>GUI</span>来讲解的，所以很多人一说<span
+lang=EN-US>Appium</span>就认为是这个。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>该产品的<span lang=EN-US>Windows</span>版本在<span lang=EN-US>2015</span>年的<strong><span
+lang=EN-US style='font-family:"微软雅黑",sans-serif;mso-bidi-font-family:宋体'>AppiumForWindows_1_4_16_1.zip</span></strong>之后就停止更新了。目前版本可以使用，但是封装的不是最新的<span
+lang=EN-US>Appium</span>版本，而是<span lang=EN-US>1.4.16</span>版本。如果要使用最新的桌面版需要使用<strong><span
+lang=EN-US style='font-family:"微软雅黑",sans-serif;mso-bidi-font-family:宋体'>Appium
+Desktop</span></strong>。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US><a
+href="https://bitbucket.org/appium/appium.app/downloads/"><span lang=EN-US
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'><span
+lang=EN-US>历史版本下载</span></span></a></span><span lang=EN-US style='font-size:
+10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="图片_x0020_8" o:spid="_x0000_i1031" type="#_x0000_t75" alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/AppiumGUI.PNG"
+ style='width:516.6pt;height:443.4pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="1.Appium简介.files/image007.png" o:title="AppiumGUI"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=689 height=591
+src="1.Appium简介.files/image008.gif"
+alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/AppiumGUI.PNG"
+v:shapes="图片_x0020_8"><![endif]></span><span lang=EN-US style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:15.0pt;line-height:
+155%;font-family:"微软雅黑",sans-serif;color:#24292E'>Appium Clients<o:p></o:p></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>因为<span lang=EN-US>Appium</span>是一个<span lang=EN-US>C/S</span>结构，有了服务端的肯定还有客户端，<span
+lang=EN-US>Appium Clients</span>就是客户端，它会给服务端<span lang=EN-US>Appium Server</span>发送请求会话来执行自动化任务。就像我们浏览器访问网页，浏览器是客户端，通过操作发送请求服务器来获取数据。我们可以使用不同的客户端浏览器（<span
+lang=EN-US>IE</span>，<span lang=EN-US>Firefox,Chrome</span>）访问一个网站。<span
+lang=EN-US> Appium</span>客户端可以使用不同的语言来实现，如<span lang=EN-US>Python</span>，<span
+lang=EN-US>java</span>等。具体详见下表：<span lang=EN-US><o:p></o:p></span></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=0
+ style='width:0cm;background:white;border-collapse:collapse;mso-yfti-tbllook:
+ 1184'>
+ <thead>
+  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+   <td style='border:solid #DFE2E5 1.0pt;mso-border-alt:solid #DFE2E5 .75pt;
+   padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+   <p class=MsoNormal align=center style='text-align:center;word-break:break-all'><b><span
+   lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+   color:#24292E'>Language/Framework<o:p></o:p></span></b></p>
+   </td>
+   <td style='border:solid #DFE2E5 1.0pt;border-left:none;mso-border-left-alt:
+   solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+   <p class=MsoNormal align=center style='text-align:center;word-break:break-all'><b><span
+   lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+   color:#24292E'>Github Repo and Installation Instructions<o:p></o:p></span></b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='mso-yfti-irow:1'>
+  <td style='border:solid #DFE2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal align=left style='text-align:left;word-break:break-all'><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+  color:#24292E'>Ruby<o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #DFE2E5 1.0pt;
+  border-right:solid #DFE2E5 1.0pt;mso-border-top-alt:solid #DFE2E5 .75pt;
+  mso-border-left-alt:solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;
+  padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US><a
+  href="https://github.com/appium/ruby_lib"><span style='mso-bidi-font-size:
+  10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>https://github.com/appium/ruby_lib</span></a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+  color:#24292E'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='border:solid #DFE2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;background:#F6F8FA;
+  padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>Python<o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #DFE2E5 1.0pt;
+  border-right:solid #DFE2E5 1.0pt;mso-border-top-alt:solid #DFE2E5 .75pt;
+  mso-border-left-alt:solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;
+  background:#F6F8FA;padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US><a
+  href="https://github.com/appium/python-client"><span style='mso-bidi-font-size:
+  10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>https://github.com/appium/python-client</span></a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+  color:#24292E'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='border:solid #DFE2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>Java<o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #DFE2E5 1.0pt;
+  border-right:solid #DFE2E5 1.0pt;mso-border-top-alt:solid #DFE2E5 .75pt;
+  mso-border-left-alt:solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;
+  padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US><a
+  href="https://github.com/appium/java-client"><span style='mso-bidi-font-size:
+  10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>https://github.com/appium/java-client</span></a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+  color:#24292E'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='border:solid #DFE2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;background:#F6F8FA;
+  padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>JavaScript
+  (Node.js)<o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #DFE2E5 1.0pt;
+  border-right:solid #DFE2E5 1.0pt;mso-border-top-alt:solid #DFE2E5 .75pt;
+  mso-border-left-alt:solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;
+  background:#F6F8FA;padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US><a
+  href="https://github.com/admc/wd"><span style='mso-bidi-font-size:10.5pt;
+  font-family:"微软雅黑",sans-serif;color:#0366D6'>https://github.com/admc/wd</span></a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+  color:#24292E'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='border:solid #DFE2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>Objective
+  C<o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #DFE2E5 1.0pt;
+  border-right:solid #DFE2E5 1.0pt;mso-border-top-alt:solid #DFE2E5 .75pt;
+  mso-border-left-alt:solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;
+  padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US><a
+  href="https://github.com/appium/selenium-objective-c"><span style='mso-bidi-font-size:
+  10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>https://github.com/appium/selenium-objective-c</span></a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+  color:#24292E'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td style='border:solid #DFE2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;background:#F6F8FA;
+  padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>PHP<o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #DFE2E5 1.0pt;
+  border-right:solid #DFE2E5 1.0pt;mso-border-top-alt:solid #DFE2E5 .75pt;
+  mso-border-left-alt:solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;
+  background:#F6F8FA;padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US><a
+  href="https://github.com/appium/php-client"><span style='mso-bidi-font-size:
+  10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>https://github.com/appium/php-client</span></a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+  color:#24292E'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td style='border:solid #DFE2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>C#
+  (.NET)<o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #DFE2E5 1.0pt;
+  border-right:solid #DFE2E5 1.0pt;mso-border-top-alt:solid #DFE2E5 .75pt;
+  mso-border-left-alt:solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;
+  padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US><a
+  href="https://github.com/appium/appium-dotnet-driver"><span style='mso-bidi-font-size:
+  10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>https://github.com/appium/appium-dotnet-driver</span></a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+  color:#24292E'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+  <td style='border:solid #DFE2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;background:#F6F8FA;
+  padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>RobotFramework<o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #DFE2E5 1.0pt;
+  border-right:solid #DFE2E5 1.0pt;mso-border-top-alt:solid #DFE2E5 .75pt;
+  mso-border-left-alt:solid #DFE2E5 .75pt;mso-border-alt:solid #DFE2E5 .75pt;
+  background:#F6F8FA;padding:4.5pt 9.75pt 4.5pt 9.75pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US><a
+  href="https://github.com/jollychang/robotframework-appiumlibrary"><span
+  style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>https://github.com/jollychang/robotframework-appiumlibrary</span></a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+  color:#24292E'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-bottom:12.0pt;background:white;border:none;mso-border-bottom-alt:
+solid #EAECEF .75pt;padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span
+lang=EN-US style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>Appium-desktop</span><span lang=EN-US style='font-size:21.0pt;
+line-height:173%;font-family:"微软雅黑",sans-serif;mso-bidi-font-family:宋体;
+color:#24292E;mso-font-kerning:0pt'><o:p></o:p></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>Appium-desktop</span><span style='font-size:
+10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>主界面包含三个菜单<span lang=EN-US>Simple,Advanced</span>、<span
+lang=EN-US>Presets<o:p></o:p></span></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>Simple<o:p></o:p></span></h2>
+
+</div>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:15.0pt;line-height:
+155%;font-family:"微软雅黑",sans-serif;color:#24292E'>host<o:p></o:p></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>设置<span lang=EN-US>Appium server</span>的<span lang=EN-US>ip</span>地址，本地调试可以将<span
+lang=EN-US>ip</span>地址修改为<span lang=EN-US>127.0.0.1<o:p></o:p></span></span></p>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:15.0pt;line-height:
+155%;font-family:"微软雅黑",sans-serif;color:#24292E'>port<o:p></o:p></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>设置端口号，默认是<span lang=EN-US>4723</span>不用修改<span lang=EN-US><o:p></o:p></span></span></p>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:15.0pt;line-height:
+155%;font-family:"微软雅黑",sans-serif;color:#24292E'>start server<o:p></o:p></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>启动<span lang=EN-US> Appium server<o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="图片_x0020_6" o:spid="_x0000_i1030" type="#_x0000_t75" alt="image" style='width:435.6pt;
+ height:404.4pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="1.Appium简介.files/image003.png" o:title="image"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=581 height=539
+src="1.Appium简介.files/image009.gif" alt=image v:shapes="图片_x0020_6"><![endif]></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>Advanced<o:p></o:p></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>高级参数配置修改，主要是一些<span lang=EN-US>Android</span>和<span lang=EN-US>iOS</span>设备，<span
+lang=EN-US>log</span>路径等相关信息的配置。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="图片_x0020_5" o:spid="_x0000_i1029" type="#_x0000_t75" alt="image" style='width:513.6pt;
+ height:419.4pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="1.Appium简介.files/image010.png" o:title="image"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=685 height=559
+src="1.Appium简介.files/image011.gif" alt=image v:shapes="图片_x0020_5"><![endif]></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="图片_x0020_4" o:spid="_x0000_i1028" type="#_x0000_t75" alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/appiumDesktop_Advances-1.PNG"
+ style='width:7in;height:338.4pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="1.Appium简介.files/image012.png" o:title="appiumDesktop_Advances-1"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=672 height=451
+src="1.Appium简介.files/image013.gif"
+alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/appiumDesktop_Advances-1.PNG"
+v:shapes="图片_x0020_4"><![endif]></span><span lang=EN-US style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>presets<o:p></o:p></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>将<span lang=EN-US>Advanced</span>中的一些配置信息作为预设配置。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span style='font-size:21.0pt;
+line-height:173%;font-family:"微软雅黑",sans-serif;color:#24292E'>启动<span
+lang=EN-US>Appium<o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>启动后控制台提示如下信息，表示<span lang=EN-US>Appium</span>启动成功。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p>&nbsp;</o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>[Appium] Welcome </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>to</span></b></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> Appium v1.7.2<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>[Appium] Non-default</span></code><span
+class=hljs-builtin><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'> server </span></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>args:<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>[Appium]<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>address: 127.0.0.1<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>[Appium] Appium REST http</span></code><span
+class=hljs-builtin><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'> interface </span></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>listener started on 127.0.0.1:4723<o:p></o:p></span></code></pre>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="图片_x0020_1" o:spid="_x0000_i1027" type="#_x0000_t75" alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/appium-desktop%20start.PNG"
+ style='width:496.2pt;height:388.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="1.Appium简介.files/image005.png" o:title="appium-desktop%20start"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=662 height=518
+src="1.Appium简介.files/image014.gif"
+alt="https://sutune.oss-cn-shenzhen.aliyuncs.com/Appium%20%E7%AE%80%E4%BB%8B%26%E5%AE%9E%E8%B7%B5/appium-desktop%20start.PNG"
+v:shapes="图片_x0020_1"><![endif]></span><span lang=EN-US style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:15.0pt;line-height:155%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>参考资料<span lang=EN-US><o:p></o:p></span></span></h4>
+
+<p style='margin-top:0cm;background:white'><span lang=EN-US><a
+href="https://github.com/appium/appium-desktop"><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#0366D6'>https://github.com/appium/appium-desktop</span></a></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

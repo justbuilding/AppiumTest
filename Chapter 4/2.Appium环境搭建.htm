@@ -1,0 +1,2861 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="2.Appium环境搭建.files/filelist.xml">
+<link rel=Edit-Time-Data href="2.Appium环境搭建.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>pingmian</o:Author>
+  <o:LastAuthor>Administrator</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>10</o:TotalTime>
+  <o:Created>2019-06-09T16:05:00Z</o:Created>
+  <o:LastSaved>2019-06-09T16:05:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>749</o:Words>
+  <o:Characters>4275</o:Characters>
+  <o:Lines>35</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>5014</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:KSOProductBuildVer dt:dt="string">2052-10.1.0.7224</o:KSOProductBuildVer>
+ </o:CustomDocumentProperties>
+</xml><![endif]-->
+<link rel=dataStoreItem href="2.Appium环境搭建.files/item0001.xml"
+target="2.Appium环境搭建.files/props002.xml">
+<link rel=themeData href="2.Appium环境搭建.files/themedata.thmx">
+<link rel=colorSchemeMapping href="2.Appium环境搭建.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DrawingGridHorizontalSpacing>5.25 磅</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:UseWord2010TableStyleRules/>
+   <w:DontGrowAutofit/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:DoNotOptimizeForBrowser/>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="375">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Outline List 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Outline List 2"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Hashtag"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Unresolved Mention"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 33554432 0 0 1 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536869121 64767 1 0 415 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+h2
+	{mso-style-noshow:yes;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 2 字符";
+	mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h3
+	{mso-style-noshow:yes;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 3 字符";
+	mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h4
+	{mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:155%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h5
+	{mso-style-noshow:yes;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 5 字符";
+	mso-style-next:正文;
+	margin-top:14.0pt;
+	margin-right:0cm;
+	margin-bottom:14.5pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:156%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-alt:none windowtext 0cm;
+	padding:0cm;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+code
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;
+	mso-bidi-font-family:宋体;}
+pre
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"HTML 预设格式 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	mso-style-link:"批注框文本 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"批注框文本 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:批注框文本;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 2";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 3";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 5";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.HTML
+	{mso-style-name:"HTML 预设格式 字符";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML 预设格式";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-hansi-font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.hljs-attr
+	{mso-style-name:hljs-attr;
+	mso-style-unhide:no;}
+span.hljs-string
+	{mso-style-name:hljs-string;
+	mso-style-unhide:no;}
+span.hljs-literal
+	{mso-style-name:hljs-literal;
+	mso-style-unhide:no;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;
+	mso-style-unhide:no;}
+span.hljs-meta
+	{mso-style-name:hljs-meta;
+	mso-style-unhide:no;}
+span.bash
+	{mso-style-name:bash;
+	mso-style-unhide:no;}
+span.hljs-keyword
+	{mso-style-name:hljs-keyword;
+	mso-style-unhide:no;}
+span.hljs-title
+	{mso-style-name:hljs-title;
+	mso-style-unhide:no;}
+span.hljs-number
+	{mso-style-name:hljs-number;
+	mso-style-unhide:no;}
+span.hljs-builtin
+	{mso-style-name:hljs-built_in;
+	mso-style-unhide:no;}
+span.hljs-regexp
+	{mso-style-name:hljs-regexp;
+	mso-style-unhide:no;}
+span.hljs-attribute
+	{mso-style-name:hljs-attribute;
+	mso-style-unhide:no;}
+span.hljs-comment
+	{mso-style-name:hljs-comment;
+	mso-style-unhide:no;}
+span.zh-hans
+	{mso-style-name:zh-hans;
+	mso-style-unhide:no;}
+span.hljs-symbol
+	{mso-style-name:hljs-symbol;
+	mso-style-unhide:no;}
+span.hljs-selector-tag
+	{mso-style-name:hljs-selector-tag;
+	mso-style-unhide:no;}
+span.hljs-selector-class
+	{mso-style-name:hljs-selector-class;
+	mso-style-unhide:no;}
+span.hljs-builtin-name
+	{mso-style-name:hljs-builtin-name;
+	mso-style-unhide:no;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("2.Appium环境搭建.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("2.Appium环境搭建.files/header.htm") fcs;
+	mso-endnote-separator:url("2.Appium环境搭建.files/header.htm") es;
+	mso-endnote-continuation-separator:url("2.Appium环境搭建.files/header.htm") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:36.0pt 36.0pt 36.0pt 36.0pt;
+	mso-header-margin:21.3pt;
+	mso-footer-margin:41.6pt;
+	mso-header:url("2.Appium环境搭建.files/header.htm") h1;
+	mso-footer:url("2.Appium环境搭建.files/header.htm") f1;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:4288680;
+	mso-list-template-ids:1652489440;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:178932902;
+	mso-list-template-ids:-2093599476;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:338193510;
+	mso-list-template-ids:-1443884652;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:501161526;
+	mso-list-template-ids:1331957210;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4
+	{mso-list-id:568883080;
+	mso-list-template-ids:-240237352;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l5
+	{mso-list-id:1158350332;
+	mso-list-template-ids:1717333216;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l5:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l5:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l5:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l5:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l5:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l5:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l5:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l6
+	{mso-list-id:1282810108;
+	mso-list-template-ids:1020143230;}
+@list l7
+	{mso-list-id:1622761352;
+	mso-list-template-ids:1549810040;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l7:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l7:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l7:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l7:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l7:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l7:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l7:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l7:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l8
+	{mso-list-id:1632057846;
+	mso-list-template-ids:-1174400880;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l8:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l8:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l8:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l8:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l8:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l8:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l8:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l8:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l9
+	{mso-list-id:1793748819;
+	mso-list-template-ids:427951794;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2049"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink="#954F72" style='tab-interval:21.0pt;
+text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-bottom:12.0pt;background:white;border:none;mso-border-bottom-alt:
+solid #EAECEF .75pt;padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>环境依赖</span><span lang=EN-US style='font-size:21.0pt;line-height:
+173%;font-family:"微软雅黑",sans-serif;mso-bidi-font-family:宋体;color:#24292E;
+mso-font-kerning:0pt'><o:p></o:p></span></h2>
+
+</div>
+
+<ul type=disc>
+ <li class=MsoNormal style='color:#24292E;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo7;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>Node.js<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo7;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>Appium<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo7;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>Appium-desktop<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo7;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>Appium-doctor<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo7;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>Appium-Python-Client<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo7;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>Python<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo7;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>JDK<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#24292E;margin-top:3.0pt;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l4 level1 lfo7;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>Andriod SDK<o:p></o:p></span></li>
+</ul>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>以上所需的软件本套教程素材包都提供，可以在视频左下角【获取素材】去对应章节下载，找到<strong><span
+lang=EN-US style='font-family:"微软雅黑",sans-serif;mso-bidi-font-family:宋体'>Appium</span></strong><strong><span
+style='font-family:"微软雅黑",sans-serif;mso-bidi-font-family:宋体'>环境配置全家桶</span></strong>。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span style='font-size:21.0pt;
+line-height:173%;font-family:"微软雅黑",sans-serif;color:#24292E'>安装<span
+lang=EN-US>Node.js<o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>下载地址：</span><span lang=EN-US><a
+href="https://nodejs.org/en/download/releases/"><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#0366D6'>https://nodejs.org/en/download/releases/</span></a></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#6A737D'>注意：<span
+lang=EN-US>Node.js</span>版本要注意与<span lang=EN-US>Appium</span>兼容，本套教程<span
+lang=EN-US>Appium</span>版本是<span lang=EN-US>1.7.2</span>，则选择的<span lang=EN-US>Node.js</span>版本为<span
+lang=EN-US>6.11.3<o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>安装完成后在按键<strong><span lang=EN-US style='font-family:"微软雅黑",sans-serif;
+mso-bidi-font-family:宋体'>Win+R</span></strong>输入<span lang=EN-US>cmd</span>打开<span
+lang=EN-US>Windows </span>命令提示符，<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>输入如下命令：<span lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:\Users\Shuqing&gt;</span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>node</span></b></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'> </span></code><span
+class=hljs-title><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990000;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>-v</span></b></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>v6.</span></code><span class=hljs-number><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:teal;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>11.3</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p>&nbsp;</o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:\Users\Shuqing&gt;npm -v<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-number><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:teal;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>3.10</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>.</span></code><span
+class=hljs-number><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:teal;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>10</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>说明：<span lang=EN-US><o:p></o:p></span></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='color:#24292E;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l8 level1 lfo8;
+     tab-stops:list 36.0pt;background:white'><span lang=EN-US style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>npm</span><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>（<span lang=EN-US>node package
+     manage</span>）是<span lang=EN-US>node.js</span>安装包管理工具，类似<span lang=EN-US>Python</span>中的<span
+     lang=EN-US>pip</span>工具。<span lang=EN-US><o:p></o:p></span></span></li>
+</ul>
+
+<ul type=disc>
+ <li class=MsoNormal style='color:#24292E;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l7 level1 lfo9;
+     tab-stops:list 36.0pt;background:white'><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>如果显示‘<span lang=EN-US>npm</span>’不是内部命令提示，则可以管理员省份运行<span
+     lang=EN-US>cmd</span>，如果还是失败，则需要检查一下环境变量是否配置，或者重新安装<span lang=EN-US>nodejs</span>。<span
+     lang=EN-US><o:p></o:p></span></span></li>
+</ul>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>Appium </span><span style='font-size:21.0pt;line-height:173%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>安装<span lang=EN-US><o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>Appium Server</span><span style='font-size:
+10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>其实可以通过命令<span lang=EN-US>
+npm install -g appium</span>来安装。不过由于众所周知的网络原因，直接使用这样安装会非常非常慢，甚至会安装失败，所以我们可以使用国内镜像来安装。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>选用的镜像是<span class=apple-converted-space><span lang=EN-US>&nbsp;</span></span></span><span
+lang=EN-US><a href="https://npm.taobao.org"><span lang=EN-US style='font-size:
+10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'><span lang=EN-US>淘宝NPM</span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'><span
+lang=EN-US>镜像</span></span></a></span><span lang=EN-US style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:15.0pt;line-height:155%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>镜像设置<span lang=EN-US><o:p></o:p></span></span></h4>
+
+<pre style='background:#F6F8FA'><span class=hljs-builtin><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>npm</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> install -g cnpm --registry=https:</span></code><span
+class=hljs-regexp><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#009926;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>//</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>registry.</span></code><span
+class=hljs-builtin><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>npm</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>.taobao.org<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p>&nbsp;</o:p></span></code></pre>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>执行完成命令看到如下提示则表示设置完成<span lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:\Users\Shuqing&gt; npm install -g cnpm </span></code><span
+class=hljs-attribute><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:navy;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>--registry</span></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>=https://registry.npm.taobao.org<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>npm WARN deprecated socks@1.1.10: </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>If</span></b></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> using 2.x branch, please</span></code><span
+class=hljs-builtin><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'> upgrade </span></span><span class=hljs-keyword><b><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>to</span></b></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> at least 2.1.6 </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>to</span></b></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> avoid a serious bug with socket data flow </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>and</span></b></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> an import issue introduced </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>in</span></b></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> 2.1.0<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:\Users\Shuqing\AppData\Roaming\npm\cnpm -&gt; C:\Users\Shuqing\AppData\Roaming\npm\node_modules\cnpm\bin\cnpm<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>+ cnpm@5.2.0<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>added 764 packages </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>in</span></b></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> 63.767s<o:p></o:p></span></code></pre>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:15.0pt;line-height:
+155%;font-family:"微软雅黑",sans-serif;color:#24292E'>appium </span><span
+style='font-size:15.0pt;line-height:155%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>安装<span lang=EN-US><o:p></o:p></span></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>使用如下命令来执行安装：<span lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><span class=hljs-comment><i><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#999988;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>#</span></i></span><span
+class=zh-hans><i><span style='font-size:9.0pt;font-family:"微软雅黑",sans-serif;
+color:#999988;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>安装最新版本</span></i></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>cnpm </span></code><span class=hljs-keyword><b><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>install</span></b></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> -g appium<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p>&nbsp;</o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-comment><i><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#999988;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>#</span></i></span><span
+class=zh-hans><i><span style='font-size:9.0pt;font-family:"微软雅黑",sans-serif;
+color:#999988;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>安装指定版本</span></i></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>cnpm </span></code><span class=hljs-keyword><b><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>install</span></b></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> appium@</span></code><span
+class=hljs-number><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:teal;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>1.7</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>.</span></code><span class=hljs-number><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:teal;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>2</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> -g<o:p></o:p></span></code></pre>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>看到如下命令时则表示下载安装完成。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>All packages installed (565 packages installed from npm registry, used 57s, speed 835.67kB/s, json 477(6.16MB), tarball 40.58MB)<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>[appium@1.8.0] link C:</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\U</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>sers</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\S</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>huqing</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\A</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>ppData</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\R</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>oaming</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\n</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>pm</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\a</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>ppium@ -&gt; C:</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\U</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>sers</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\S</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>huqing</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\A</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>ppData</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\R</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>oaming</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\n</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>pm</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\n</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>ode_modules</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\a</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>ppium</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\b</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>uild</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\l</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>ib</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\m</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>ain.js<o:p></o:p></span></code></pre>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>npm</span><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'>的包安装分为本地安装（<span lang=EN-US>local</span>）、全局安装（<span
+lang=EN-US>global</span>）两种，一般我们推荐使用全局安装。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:15.0pt;line-height:
+155%;font-family:"微软雅黑",sans-serif;color:#24292E'>appium</span><span
+style='font-size:15.0pt;line-height:155%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>配置<span lang=EN-US><o:p></o:p></span></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>安装完成之后可以使用如下命令查看<span lang=EN-US>appium</span>的安装路径<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\U</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>sers</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\S</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>huqing&gt;where appium<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\U</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>sers</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\S</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>huqing</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\A</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>ppData</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\R</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>oaming</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\n</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>pm</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\a</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>ppium<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\U</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>sers</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\S</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>huqing</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\A</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>ppData</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\R</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>oaming</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\n</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>pm</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\a</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>ppium.cmd<o:p></o:p></span></code></pre>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:15.0pt;line-height:
+155%;font-family:"微软雅黑",sans-serif;color:#24292E'>appium</span><span
+style='font-size:15.0pt;line-height:155%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>运行<span lang=EN-US><o:p></o:p></span></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>在控制台输入命令<span lang=EN-US> appium</span>即可启动<span lang=EN-US>appium</span>服务，<span
+lang=EN-US>appium -v</span>查看版本<span lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:\Users\Shuqing&gt;appium -v<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>1.7.2<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p>&nbsp;</o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:\Users\Shuqing&gt;appium<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>[Appium] Welcome </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>to</span></b></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> Appium v1.7.2<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>[Appium] Appium REST http</span></code><span
+class=hljs-builtin><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'> interface </span></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>listener started on 0.0.0.0:4723<o:p></o:p></span></code></pre>
+
+<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#6A737D'>如果输入<span
+lang=EN-US>appium</span>后显示：“<span lang=EN-US>appium</span>不是内部或外部命令<span
+lang=EN-US>,</span>也不是可运行的程序或批处理文件” 可以将<span lang=EN-US>appium</span>安装的路径 如： “<span
+lang=EN-US>C:\Users\Shuqing\AppData\Roaming\npm</span>”配置到系统环境变量<span
+lang=EN-US>Path</span>中<span lang=EN-US><o:p></o:p></span></span></p>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:15.0pt;line-height:155%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>退出<span lang=EN-US>appium<o:p></o:p></span></span></h4>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>按键<span lang=EN-US> ctrl+c </span>选择<span lang=EN-US>y </span>即可退出<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span style='font-size:21.0pt;
+line-height:173%;font-family:"微软雅黑",sans-serif;color:#24292E'>安装<span
+lang=EN-US>Appium-desktop<o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>下载地址：</span><span lang=EN-US><a
+href="https://github.com/appium/appium-desktop/releases"><span
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>https://github.com/appium/appium-desktop/releases</span></a></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>上面提到的问题可以使用前面我们已经介绍了<span lang=EN-US>Appium Server</span>来解决，<span
+lang=EN-US>Appium-desktop</span>工具其实也封装了<span lang=EN-US>Appium server</span>和<span
+lang=EN-US>Node.js</span>依赖环境。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>appium-desktop</span><span style='font-size:
+10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>是我们初学者最容易上手的工具，后面课程首先会基于这个工具来讲解！然后再基于<span
+lang=EN-US>appium </span>命令来讲。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>python</span><span style='font-size:21.0pt;line-height:173%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>环境安装配置<span lang=EN-US><o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>见之前的视频教程：</span><span lang=EN-US><a
+href="http://www.51zxw.net/show.aspx?id=60055&amp;cid=615"><span
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>3-2 Python
+</span><span lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#0366D6'><span lang=EN-US>安装与配置</span></span></a></span><span lang=EN-US
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>安装成功之后输入命令<span lang=EN-US> python --version</span>看到如下提示即可<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><span class=hljs-selector-tag><b><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>C</span></b></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>:\</span></code><span
+class=hljs-selector-tag><b><span lang=EN-US style='font-size:9.0pt;font-family:
+Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>Users</span></b></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>\</span></code><span
+class=hljs-selector-tag><b><span lang=EN-US style='font-size:9.0pt;font-family:
+Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>Shuqing</span></b></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>&gt;</span></code><span
+class=hljs-selector-tag><b><span lang=EN-US style='font-size:9.0pt;font-family:
+Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>python</span></b></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'> </span></code><span
+class=hljs-selector-tag><b><span lang=EN-US style='font-size:9.0pt;font-family:
+Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>--version</span></b></span><code><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-selector-tag><b><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>Python</span></b></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> 3</span></code><span
+class=hljs-selector-class><span lang=EN-US style='font-size:9.0pt;font-family:
+Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>.5.0</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span style='font-size:21.0pt;
+line-height:173%;font-family:"微软雅黑",sans-serif;color:#24292E'>安装<span
+lang=EN-US>Appium-Python-Client<o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>通过命令：<span class=apple-converted-space><span lang=EN-US>&nbsp;</span></span><strong><span
+lang=EN-US style='font-family:"微软雅黑",sans-serif;mso-bidi-font-family:宋体'>pip
+install Appium-Python-Client</span></strong><span class=apple-converted-space><span
+lang=EN-US>&nbsp;</span></span>进行安装。 安装后可以通过如下命令来检测是否安装成功。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>输入命令“<strong><span lang=EN-US style='font-family:"微软雅黑",sans-serif;
+mso-bidi-font-family:宋体'>from appium import webdriver</span></strong>” 回车，如果控制台没有报错，则说明安装成功。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:\Users\Shuqing&gt;python<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>Python 3.5.0 (v3.5.0:374f501f4567, Sep 13 2015, 02:27:37) [MSC v.1900 64 bit (AMD64)] on win32</span></code><span
+class=hljs-builtin><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'><o:p></o:p></span></span></pre><pre style='background:#F6F8FA'><span
+class=hljs-builtin><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>Type </span></span><span class=hljs-string><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#DD1144;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>&quot;help&quot;</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>, </span></code><span
+class=hljs-string><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#DD1144;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>&quot;copyright&quot;</span></span><code><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>, </span></code><span
+class=hljs-string><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#DD1144;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>&quot;credits&quot;</span></span><code><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'> </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>or</span></b></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> </span></code><span class=hljs-string><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#DD1144;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>&quot;license&quot;</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>for</span></b></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> more information.<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>&gt;&gt;&gt; </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>from</span></b></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'> appium import webdriver<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p>&nbsp;</o:p></span></code></pre>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>如果出现如下报错，则说明安装失败<span lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>ImportError: No </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>module</span></b></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'> </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>named</span></b></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'> </span></code><span
+class=hljs-string><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#DD1144;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>'appium'</span></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>ImportError: cannot </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>import</span></b></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'> </span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>name</span></b></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'> </span></code><span
+class=zh-hans><span style='font-size:9.0pt;font-family:"微软雅黑",sans-serif;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>“</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>webdriver</span></code><span class=zh-hans><span
+style='font-size:9.0pt;font-family:"微软雅黑",sans-serif;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>”</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>说明：装<span lang=EN-US>Appium-Python-Client</span>安装后的路径一般为：<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>{Python </span></code><span class=zh-hans><span
+style='font-size:9.0pt;font-family:"微软雅黑",sans-serif;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>安装路径</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>}</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\L</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>ib</span></code><span class=hljs-symbol><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#990073;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>\s</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>ite-packages</span></code><span
+class=hljs-symbol><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#990073;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>\a</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>ppium<o:p></o:p></span></code></pre>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>JDK</span><span style='font-size:21.0pt;line-height:173%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>安装配置<span lang=EN-US><o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>jdk</span><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'>下载地址<span lang=EN-US>:<o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US><a
+href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"><span
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</span></a></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>jdk</span><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#24292E'>环境变量配置<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US><a
+href="http://jingyan.baidu.com/article/624e74599e8ad834e8ba5a94.html"><span
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>http://jingyan.baidu.com/article/624e74599e8ad834e8ba5a94.html</span></a></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>安装配置完成后，打开命令提示符窗口，然后输入如下面命令有对应提示说明安装配置成功。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:\Users\Shuqing&gt;java -version<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>java version </span></code><span
+class=hljs-string><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#DD1144;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>&quot;1.8.0_05&quot;</span></span><code><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>Java(TM) SE Runtime Environment (build 1.8.0_05-b13)<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>Java HotSpot(TM) 64-Bit</span></code><span
+class=hljs-builtin><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'> Server </span></span><code><span lang=EN-US style='font-size:
+9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>VM (build 25.5-b02, mixed mode)<o:p></o:p></span></code></pre>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span lang=EN-US
+style='font-size:21.0pt;line-height:173%;font-family:"微软雅黑",sans-serif;
+color:#24292E'>Andriod sdk </span><span style='font-size:21.0pt;line-height:
+173%;font-family:"微软雅黑",sans-serif;color:#24292E'>安装<span lang=EN-US><o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>下载地址：<span class=apple-converted-space><span lang=EN-US>&nbsp;</span></span></span><span
+lang=EN-US><a href="http://tools.android-studio.org/index.php/sdk"><span
+style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#0366D6'>http://tools.android-studio.org/index.php/sdk</span></a></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>根据自己的<span lang=EN-US>PC</span>平台下载对应版本即可。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>安装完成后需要配置环境变量：<span lang=EN-US>ANDROID_HOME</span>，第二章有详细说明。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #EAECEF 1.0pt;
+mso-border-bottom-alt:solid #EAECEF .75pt;padding:0cm 0cm 4.0pt 0cm;background:
+white'>
+
+<h2 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white;border:none;mso-border-bottom-alt:solid #EAECEF .75pt;
+padding:0cm;mso-padding-alt:0cm 0cm 4.0pt 0cm'><span style='font-size:21.0pt;
+line-height:173%;font-family:"微软雅黑",sans-serif;color:#24292E'>安装<span
+lang=EN-US> appium-doctor<o:p></o:p></span></span></h2>
+
+</div>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"微软雅黑",sans-serif;color:#24292E'>appium-doctor</span><span style='font-size:
+10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'>可以检测<span lang=EN-US>Appium</span>整体依赖环境配置情况。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:\Users\</span></code><span
+class=hljs-keyword><b><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:#333333;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>Shuqing&gt;cnpm install </span></b></span><code><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#333333;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>appium-doctor -g<o:p></o:p></span></code></pre>
+
+<ul type=disc>
+ <li class=MsoNormal style='color:#24292E;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;text-align:left;mso-pagination:widow-orphan;mso-list:l0 level1 lfo10;
+     tab-stops:list 36.0pt;background:white'><span style='mso-bidi-font-size:
+     10.5pt;font-family:"微软雅黑",sans-serif'>在控制台输入命令：<span lang=EN-US>appium-doctor
+     </span>看到如下提示说明整体环境配置成功。<span lang=EN-US><o:p></o:p></span></span></li>
+</ul>
+
+<pre style='background:#F6F8FA'><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'>C:\Users\Shuqing&gt;appium-doctor<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor Appium Doctor v.1.4.3<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor ### Diagnostic starting ###<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor<span style='mso-spacerun:yes'>&nbsp; </span></span></code><span
+class=zh-hans><span lang=EN-US style='font-size:9.0pt;font-family:"Segoe UI Emoji",sans-serif;
+mso-fareast-font-family:微软雅黑;mso-bidi-font-family:"Segoe UI Emoji";color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>&#10004;</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> The Node.js binary was found at: D:\program files\nodejs\node.exe<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor<span style='mso-spacerun:yes'>&nbsp; </span></span></code><span
+class=zh-hans><span lang=EN-US style='font-size:9.0pt;font-family:"Segoe UI Emoji",sans-serif;
+mso-fareast-font-family:微软雅黑;mso-bidi-font-family:"Segoe UI Emoji";color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>&#10004;</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> Node version is 6.11.3<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor<span style='mso-spacerun:yes'>&nbsp; </span></span></code><span
+class=zh-hans><span lang=EN-US style='font-size:9.0pt;font-family:"Segoe UI Emoji",sans-serif;
+mso-fareast-font-family:微软雅黑;mso-bidi-font-family:"Segoe UI Emoji";color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>&#10004;</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> ANDROID_HOME is </span></code><span
+class=hljs-builtin-name><span lang=EN-US style='font-size:9.0pt;font-family:
+Consolas;color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>set</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> </span></code><span class=hljs-keyword><b><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>to</span></b></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>: E:\Andriod_sdk<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor<span style='mso-spacerun:yes'>&nbsp; </span></span></code><span
+class=zh-hans><span lang=EN-US style='font-size:9.0pt;font-family:"Segoe UI Emoji",sans-serif;
+mso-fareast-font-family:微软雅黑;mso-bidi-font-family:"Segoe UI Emoji";color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>&#10004;</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> JAVA_HOME is </span></code><span
+class=hljs-builtin-name><span lang=EN-US style='font-size:9.0pt;font-family:
+Consolas;color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>set</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> </span></code><span class=hljs-keyword><b><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>to</span></b></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>: C:\Program Files\Java\jdk1.8.0_05<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor<span style='mso-spacerun:yes'>&nbsp; </span></span></code><span
+class=zh-hans><span lang=EN-US style='font-size:9.0pt;font-family:"Segoe UI Emoji",sans-serif;
+mso-fareast-font-family:微软雅黑;mso-bidi-font-family:"Segoe UI Emoji";color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>&#10004;</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> adb exists at: E:\Andriod_sdk\platform-tools\adb.exe<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor<span style='mso-spacerun:yes'>&nbsp; </span></span></code><span
+class=zh-hans><span lang=EN-US style='font-size:9.0pt;font-family:"Segoe UI Emoji",sans-serif;
+mso-fareast-font-family:微软雅黑;mso-bidi-font-family:"Segoe UI Emoji";color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>&#10004;</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> android exists at: E:\Andriod_sdk\tools\android.bat<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor<span style='mso-spacerun:yes'>&nbsp; </span></span></code><span
+class=zh-hans><span lang=EN-US style='font-size:9.0pt;font-family:"Segoe UI Emoji",sans-serif;
+mso-fareast-font-family:微软雅黑;mso-bidi-font-family:"Segoe UI Emoji";color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>&#10004;</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> emulator exists at: E:\Andriod_sdk\tools\emulator.exe<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor<span style='mso-spacerun:yes'>&nbsp; </span></span></code><span
+class=zh-hans><span lang=EN-US style='font-size:9.0pt;font-family:"Segoe UI Emoji",sans-serif;
+mso-fareast-font-family:微软雅黑;mso-bidi-font-family:"Segoe UI Emoji";color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'>&#10004;</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> Bin directory of %JAVA_HOME% is </span></code><span
+class=hljs-builtin-name><span lang=EN-US style='font-size:9.0pt;font-family:
+Consolas;color:#0086B3;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>set</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'><o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor ### Diagnostic completed, </span></code><span
+class=hljs-literal><span lang=EN-US style='font-size:9.0pt;font-family:Consolas;
+color:teal;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm'>no</span></span><code><span lang=EN-US style='font-size:9.0pt;
+font-family:Consolas;color:#333333;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm'> fix needed. ###<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor Everything looks good, bye!<o:p></o:p></span></code></pre><pre
+style='background:#F6F8FA'><span class=hljs-builtin-name><span lang=EN-US
+style='font-size:9.0pt;font-family:Consolas;color:#0086B3;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm'>info</span></span><code><span
+lang=EN-US style='font-size:9.0pt;font-family:Consolas;color:#333333;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm'> AppiumDoctor<o:p></o:p></span></code></pre>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;
+color:#24292E'>如果上面某一项显示为“<span lang=EN-US>X</span>”则说明相关环境没有配置好，需要重新安装配置。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<h4 style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:15.0pt;line-height:155%;
+font-family:"微软雅黑",sans-serif;color:#24292E'>参考资料<span lang=EN-US><o:p></o:p></span></span></h4>
+
+<p style='margin-top:0cm;background:white'><span lang=EN-US><a
+href="https://testerhome.com/topics/13146"><span style='font-size:10.5pt;
+font-family:"微软雅黑",sans-serif;color:#0366D6'>https://testerhome.com/topics/13146</span></a></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"微软雅黑",sans-serif;color:#24292E'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

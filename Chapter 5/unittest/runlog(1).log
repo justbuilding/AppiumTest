@@ -1,0 +1,33 @@
+2018-05-22 16:49:21,514 myunit.py[line:8] INFO =====setUp====
+2018-05-22 16:49:21,516 desired_caps.py[line:27] INFO start app...
+2018-05-22 16:49:32,678 test_login.py[line:19] INFO ======test_login_error=====
+2018-05-22 16:49:32,679 common_fun.py[line:12] INFO ==========check_cancelBtn=========
+2018-05-22 16:49:33,541 common_fun.py[line:21] INFO =========check skipBtn=============
+2018-05-22 16:49:34,655 loginView.py[line:15] INFO ============login_action==============
+2018-05-22 16:49:34,656 loginView.py[line:16] INFO username is:6666
+2018-05-22 16:49:40,006 loginView.py[line:19] INFO password is:222
+2018-05-22 16:49:45,158 loginView.py[line:22] INFO click loginBtn
+2018-05-22 16:49:45,810 loginView.py[line:24] INFO login finished!
+2018-05-22 16:49:45,812 myunit.py[line:12] INFO ====tearDown====
+2018-05-22 16:49:51,544 myunit.py[line:8] INFO =====setUp====
+2018-05-22 16:49:51,547 desired_caps.py[line:27] INFO start app...
+2018-05-22 16:50:05,072 test_login.py[line:14] INFO ======test_login_zxw2017=====
+2018-05-22 16:50:05,073 common_fun.py[line:12] INFO ==========check_cancelBtn=========
+2018-05-22 16:50:05,845 common_fun.py[line:21] INFO =========check skipBtn=============
+2018-05-22 16:50:06,971 loginView.py[line:15] INFO ============login_action==============
+2018-05-22 16:50:06,971 loginView.py[line:16] INFO username is:自学网2017
+2018-05-22 16:50:12,388 loginView.py[line:19] INFO password is:zxw2017
+2018-05-22 16:50:17,578 loginView.py[line:22] INFO click loginBtn
+2018-05-22 16:50:18,310 loginView.py[line:24] INFO login finished!
+2018-05-22 16:50:18,311 myunit.py[line:12] INFO ====tearDown====
+2018-05-22 16:50:24,093 myunit.py[line:8] INFO =====setUp====
+2018-05-22 16:50:24,095 desired_caps.py[line:27] INFO start app...
+2018-05-22 16:50:36,977 test_login.py[line:9] INFO ======test_login_zxw2018=====
+2018-05-22 16:50:36,977 common_fun.py[line:12] INFO ==========check_cancelBtn=========
+2018-05-22 16:50:37,657 common_fun.py[line:21] INFO =========check skipBtn=============
+2018-05-22 16:50:38,702 loginView.py[line:15] INFO ============login_action==============
+2018-05-22 16:50:38,702 loginView.py[line:16] INFO username is:自学网2018
+2018-05-22 16:50:43,976 loginView.py[line:19] INFO password is:zxw2018
+2018-05-22 16:50:49,112 loginView.py[line:22] INFO click loginBtn
+2018-05-22 16:50:49,803 loginView.py[line:24] INFO login finished!
+2018-05-22 16:50:49,803 myunit.py[line:12] INFO ====tearDown====
