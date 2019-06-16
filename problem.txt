@@ -1,6 +1,7 @@
 问题一：
 [转]夜神模拟器127.0.0.1:62001: 由于目标 计算机积极拒绝，无法连接 解决方法
 查找原因：
+原因一（adb和nox_adb版本问题）
 1）关闭AS和夜神进程
 2）cmd下输入  adb version为1.039
 3）cmd下输入  Nox_adb version为1.036（PS:输入此命令前提是需要将夜神模拟器中的bin路径添加到path环境变量中）
@@ -10,5 +11,51 @@
 List of devices attached
 127.0.0.1:62001 device
 至此问题已解决。如果有问题请双击打开模拟器就一定能连接成功
+原因二（没有同时开启adb和nox_adb的server）
+C:\Users\Administrator>adb start-server
+* daemon not running; starting now at tcp:5037
+could not read ok from ADB Server
+* failed to start daemon
+error: cannot connect to daemon
 
+解决：
+C:\Users\Administrator>nox_adb start-server
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+
+C:\Users\Administrator>adb start-server
+adb server version (36) doesn't match this client (41); killing...
+* daemon started successfully
+
+C:\Users\Administrator>adb devices
+List of devices attached
+
+C:\Users\Administrator>adb connect 127.0.0.1:62001
+connected to 127.0.0.1:62001
 问题二：
+
+
+
+
+问题三：
+adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release' exited with code 3221226356'; Stderr: ''; Code: '3221226356'
+
+问题四：
+Could not connect to server; are you sure it's running?
+
+问题五：
+Cannot find AVD system path. Please define ANDROID_SDK_ROOT
+解决：到Android studio设置里下载安卓sdk
+
+问题六：
+emulator-5554   unauthorized
+关闭模拟器
+在Android Virtual Device Manager中点击Actions 的第三个按钮，wipe data 来清除app所有数据
+启动模拟器
+
+问题七：
+AttributeError: 'list' object has no attribute 'send_keys'
+AttributeError: 'list' object has no attribute 'click'
+
+解决：将”driver.find_elements_by_xpath“改为“driver.find_element_by_xpath”即可解决。
+
