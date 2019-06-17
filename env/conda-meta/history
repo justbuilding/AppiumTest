@@ -1,0 +1,30 @@
+==> 2019-06-05 19:19:58 <==
+# cmd: C:\Users\Administrator\Anaconda3\Scripts\conda-script.py create --yes --json --prefix C:\Users\Administrator\Anaconda3\envs\AppiumTest python=3.6
+# conda version: 4.6.14
++defaults::certifi-2019.3.9-py36_0
++defaults::pip-19.1.1-py36_0
++defaults::python-3.6.8-h9f7ef89_7
++defaults::setuptools-41.0.1-py36_0
++defaults::sqlite-3.28.0-he774522_0
++defaults::vc-14.1-h0510ff6_4
++defaults::vs2015_runtime-14.15.26706-h3a45250_4
++defaults::wheel-0.33.4-py36_0
++defaults::wincertstore-0.2-py36h7fe50ca_0
+# update specs: ['python=3.6']
+==> 2019-06-05 19:40:04 <==
+# cmd: C:\Users\Administrator\Anaconda3\Scripts\conda-script.py install --yes --json --force-pscheck --prefix C:\Users\Administrator\Anaconda3\envs\AppiumTest selenium
+# conda version: 4.6.14
++defaults::asn1crypto-0.24.0-py36_0
++defaults::ca-certificates-2019.5.15-0
++defaults::cffi-1.12.3-py36h7a1dbc1_0
++defaults::cryptography-2.7-py36h7a1dbc1_0
++defaults::idna-2.8-py36_0
++defaults::openssl-1.1.1c-he774522_1
++defaults::pycparser-2.19-py36_0
++defaults::pyopenssl-19.0.0-py36_0
++defaults::pysocks-1.7.0-py36_0
++defaults::selenium-3.141.0-py36he774522_0
++defaults::six-1.12.0-py36_0
++defaults::urllib3-1.25.2-py36_0
++defaults::win_inet_pton-1.1.0-py36_0
+# update specs: ['selenium']
